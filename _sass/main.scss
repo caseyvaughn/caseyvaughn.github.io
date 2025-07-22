@@ -1,3 +1,43 @@
+:root {
+  --color-bg: #142030;
+  --color-primary: #FF5C8D;
+  --color-accent: #732553;
+  --color-secondary: #1E3442;
+  --color-text: #C5CECE;
+  --color-highlight: #E9D8C8
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: system-ui, sans-serif;
+}
+
+a {
+  color: var(--color-primary);
+}
+
+a:hover {
+  color: var(--color-highlight);
+}
+
+h1, h2 {
+  color: var(--color-primary);
+}
+
+h3, h4 {
+  color: var(--color-highlight);
+}
+
+// TODO: fix nav styling
 .current {
   color: green;
+}
+
+.site-title, .site-title:visited {
+  color: var(--color-primary)
+}
+
+.site-nav .page-link {
+  color: var(--color-primary)
 }
