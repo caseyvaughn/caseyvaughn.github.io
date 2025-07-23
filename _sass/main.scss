@@ -11,14 +11,15 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
   font-family: system-ui, sans-serif;
+  min-width: 500px;
 }
 
-a {
+a, a:visited {
   color: var(--color-primary);
 }
 
 a:hover {
-  color: var(--color-highlight);
+  color: var(--color-text);
 }
 
 h1, h2 {
@@ -26,7 +27,7 @@ h1, h2 {
 }
 
 h3, h4 {
-  color: var(--color-highlight);
+  color: var(--color-text);
 }
 
 // TODO: fix nav styling
