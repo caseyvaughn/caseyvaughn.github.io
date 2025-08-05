@@ -1,10 +1,17 @@
 <header class="site-header" role="banner">
 
-  <div class="wrapper" style="font-family: monospace">
+  <div class="wrapper" style="font-family: monospace; display: flex">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    
+      <button id="toggle-theme" aria-label="toggle theme" style="all: unset">
+        <img src="{{ '/assets/images/sun.svg' | relative_url }}" alt="sun" id="theme-icon" width="24" height="24">
+      </button>
+    </div>
 
+    <div style="margin-left: auto">
     {%- if page_paths -%}
       <nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -26,5 +33,24 @@
         </div>
       </nav>
     {%- endif -%}
+    </div>
   </div>
 </header>
+
+
+<script>
+  const toggleBtn = document.getElementById('toggle-theme');
+  const icon = document.getElementById('theme-icon');
+
+  function setTheme(theme) {
+    document.body.classList.toggle("light-mode", theme === 'light');
+    icon.src = theme === 'light' ? '/assets/images/moon.svg' : '/assets/images/sun.svg';
+    localStorage.setItem('theme', theme);
+  }
+
+  toggleBtn.addEventListener("click", () => {
+    const newTheme = document.body.classList.contains('light-mode') ? 'dark' : 'light';
+    setTheme(newTheme)
+  }
+)
+</script>

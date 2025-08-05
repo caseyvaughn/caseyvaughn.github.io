@@ -1,10 +1,17 @@
+/* dark mode styles -- default */
 :root {
   --color-bg: #142030;
   --color-primary: #FF5C8D;
-  --color-accent: #732553;
-  --color-secondary: #1E3442;
   --color-text: #C5CECE;
-  --color-highlight: #E9D8C8
+
+}
+
+/* User override: Light mode */
+body.light-mode {
+  // --color-bg: #C5CECE;
+  --color-bg: #E4EDED;
+  --color-primary: #DE2863;
+  --color-text: #163059;
 }
 
 body {
@@ -41,4 +48,20 @@ h3, h4 {
 
 .site-nav .page-link {
   color: var(--color-primary)
+}
+
+#theme-toggle {
+  all: unset; /* resets all inherited/default button styles */
+  cursor: pointer;
+  padding: 0.5rem; /* optional padding */
+  border-radius: 0.25rem; /* optional: round edges */
+  background-color: transparent; /* ensure no bg */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Optional: hide ghost elements if you find any by inspecting */
+.site-header .wrapper > :empty {
+  display: none !important;
 }
