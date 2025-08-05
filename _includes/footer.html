@@ -1,10 +1,10 @@
-<footer class="site-footer h-card">
+<footer class="site-footer h-card" style="font-family: monospace">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
   <div class="wrapper">
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
+    <div style="display: flex; justify-content: center">
+      <div style="padding: 1rem">
         <ul class="contact-list">
           <li class="p-name">
             </li>
@@ -14,20 +14,14 @@
         </ul>
       </div>
 
-      <div class="footer-col footer-col-2">
+      <div style="padding: 1rem">
         {%- include social.html -%}
       </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
-
     </div>
+
     <div style="display: flex; justify-contents: center">
-      <div style="margin: auto;">built with ❤️ by me (& my cat Juni)</div>
+      <div style="margin: auto;">built with ❤️ by me (& my cat juni 🐈), powered by <a href="https://jekyllrb.com/">jekyll</a></div>
     </div>
 
   </div>
-
-
 </footer>

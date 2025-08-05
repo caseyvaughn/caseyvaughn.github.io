@@ -1,15 +1,14 @@
 ---
 layout: default
-title: My Experience
+title: my experience
 permalink: /experience/
 ---
 
-Work Experience
-
 **Technical Skills**
+<br>
 Languages: Ruby, JavaScript, TypeScript, SQL, HTML, CSS
-Frameworks: Ruby on Rails, React SQL, PostgresQL, MySQL, RSpec, Jest, HTML, CSS
-DB Systems: MySQL, PostgresQL
+<br>
+Frameworks & Tools: Ruby on Rails, React, PostgresQL, MySQL, RSpec, Jest
 
 **Education**
 
