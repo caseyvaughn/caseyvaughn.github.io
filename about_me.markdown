@@ -4,13 +4,15 @@ title: about me
 permalink: /about_me/
 ---
 
-I'm a full-stack developer with a background in international relations and program coordination. Originally from Indiana (go Hoosiers!), my passion for language learning and exploration led me to live & study in Chile, Turkey, Azerbaijan, and Washington DC. I now proudly call Philadelphia my home.
+👩🏼‍💻 I'm a full-stack developer with a background in international relations and program management. My curiosity to understand how the technology we use everyday works led me to learn web development.
 
-My curiousity to understand how the technology we use everyday works led me to learn web development. I’m most fulfilled when collaborating with others to make a positive impact on the world.
+🌏I’m most fulfilled when collaborating with others to make a positive impact on the world. I'm currently contributing to open source projects with Ruby for Good.
 
-Outside of coding, I'm an avid cyclist and birder.
+🇨🇱🇹🇷🇦🇿Originally from Indiana (go Hoosiers!), my passion for language learning and exploration led me to live & study in Chile, Spain, Turkey, Azerbaijan, and Washington DC. I now proudly call Philadelphia my home, where I'm working on keeping my Spanish and Turkish.
 
-My cat Juni is my most frequent pair-programming partner.
+🚲🦜 I'm an avid cyclist and birder. My favorite cycling adventure was solo bike touring across northern Spain.
+
+🐈 💻 My cat Juni is my most frequent pair-programming partner.
 
 <img src="/assets/images/juni-coding-bw.jpeg" 
 alt="Cat using two mice on a desk" 
