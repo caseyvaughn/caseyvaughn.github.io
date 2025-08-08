@@ -8,7 +8,7 @@
 
 /* User override: Light mode */
 body.light-mode {
-  // --color-bg: #C5CECE;
+
   --color-bg: #E4EDED;
   --color-primary: #DE2863;
   --color-text: #163059;
@@ -37,11 +37,6 @@ h3, h4 {
   color: var(--color-text);
 }
 
-// TODO: fix nav styling
-.current {
-  color: green;
-}
-
 .site-title, .site-title:visited {
   color: var(--color-primary)
 }
@@ -64,4 +59,14 @@ h3, h4 {
 /* Optional: hide ghost elements if you find any by inspecting */
 .site-header .wrapper > :empty {
   display: none !important;
+}
+
+/* Media query for smaller screens*/
+@media screen and (max-width: 511px) {
+  #homepage-container {
+    flex-direction: column;
+  }
+  .homepage-div {
+    margin-left: 2rem;
+  }
 }
